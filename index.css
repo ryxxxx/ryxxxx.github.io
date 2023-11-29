@@ -1,0 +1,112 @@
+body {
+    background-color: rgb(9,9,9);
+    margin:0;
+    color:whitesmoke;
+}
+
+#navigation {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 1em;
+}
+
+#navigation > a {
+    color: inherit;
+    text-decoration: none;
+    margin-left: 1em;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    height:fit-content;
+}
+
+#name {
+    margin-left: 1em;
+}
+
+#social-media-container {
+    color:whitesmoke;
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: 2em;
+    margin-bottom: 2em;
+    align-self: flex-end;
+}
+
+#social-media-container > a {
+    color: whitesmoke;
+    text-decoration: none;
+    margin-left: 0.5em;
+
+}
+
+#social-media-container > a:hover > .social-media-icon {
+    color: rgb(9,9,9);
+    border-color: transparent;
+    background-color: rgb(245, 245, 245);
+}
+
+.social-media-icon {
+    display: flex;
+    justify-content: center; 
+    border: 2.5px solid rgb(245, 245, 245);
+    border-radius: 50%;
+    width: fit-content;
+    padding: 6px;
+}
+
+.social-media-icon > svg {
+    width: 1em;
+    height: auto;
+}
+
+
+#slideshow{
+    top:0;
+    left:0;
+    position: absolute;
+    overflow:hidden;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+#slideshow > .bgi {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: imageAnimation 12s infinite 0s;
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    opacity: 0;
+}
+
+#slideshow > .bgi:nth-child(1)
+{
+    background-image: url(assets/placeholder1.jpg);
+}
+
+#slideshow > .bgi:nth-child(2)
+{
+    background-image: url(assets/placeholder2.jpg);
+    animation-delay: 6s; 
+}
+  
+@keyframes imageAnimation { 
+    0% { opacity: 0; animation-timing-function: ease-in; }
+    5% { opacity: 1; animation-timing-function: ease-out; }
+    45% { opacity: 1 }
+    50% { opacity: 0 }
+    100% { opacity: 0 }
+}
