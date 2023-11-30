@@ -24,17 +24,47 @@ body {
     padding-bottom: 0.75em;
     padding-left: 0.5em;
     padding-right: 0.5em;
-    border-bottom: 3px solid #5ac3b0;
-    border-bottom-left-radius: 3px;
+    border-bottom: 8px solid;
+    border-image: linear-gradient(to top, #5ac3b0 49%, #5ac3b0 50%, #de5935 51%, #de5935 100%);
+    border-image-slice: 0% 0% 100% 0%;
+    transition: 100ms;
 }
+
+#navigation > svg {
+    display:none;
+    width: 18%;
+    min-width: 75px;
+    height: auto;
+    margin:auto;
+}
+
 
 #navigation > a {
     color: inherit;
     text-decoration: none;
     margin-left: 0.5em;
     margin-right: 0.5em;
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
+
+
+@media screen and (max-width: 615px) {
+    #navigation {
+        width: 100%;
+        background-color: #f7cd46;
+        padding: 0;
+        margin:0;
+    }
+
+    #navigation > svg {
+        display:block;
+    }
+
+    #navigation > a {
+        display: none;
+    }
+}
+  
 
 #footer {
     position: absolute;
