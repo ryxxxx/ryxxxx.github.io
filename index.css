@@ -1,8 +1,4 @@
 @font-face {
-    font-family: KaiseiOpti;
-    src: url("assets/KaiseiOpti-Regular.ttf");
-}
-@font-face {
     font-family: BodoniModa;
     src: url("assets/BodoniModa_48pt-Regular.ttf");
 }
@@ -25,10 +21,11 @@ body {
     right: 0;
     top: 0;
     padding-top: 1.25em;
-    padding-bottom: 1em;
-    padding-left: 0.5em;
+    padding-bottom: 0.75em;
+    padding-left: 1em;
     padding-right: 0.5em;
     border-bottom: 1px solid #5ac3b0;
+    border-bottom-left-radius: 30%;
 }
 
 #navigation > a {
