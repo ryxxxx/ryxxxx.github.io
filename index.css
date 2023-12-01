@@ -94,7 +94,7 @@ body {
         padding: 0;
         text-align: center;
         line-height: 23vh;
-        box-shadow: 0px -8px 8px 0px rgba(0,0,0,0.65) inset;
+        box-shadow: 0px -6px 12px 0px rgba(0,0,0,0.65) inset;
 
     }
     #menu-toggle:checked ~ #navigation > span > .menu-item
@@ -102,7 +102,7 @@ body {
         display: inline-block;
         margin: auto;
         font-size: 3em;
-        text-shadow: 0px 0px 2px black;
+        text-shadow: 0px 0px 10px black;
     }
 
     #menu-toggle:checked ~ #footer {
@@ -194,20 +194,27 @@ body {
         justify-self: center;
     }
 
+    #name > h1 {
+        font-size: 3.3em;
+    }
+    
+    #name > h2 {
+        font-size: 1.5em;
+    }
 
     #social-media-container {
         margin: auto;
-        margin-bottom: 2em;
+        margin-bottom: 1.5em;
     }
 
     .social-media-icon {
-        padding: 0.8em;
-        margin-left: 0.5em;
-        margin-right: 0.5em;
+        padding: 0.5em;
+        margin-left: 0.4em;
+        margin-right: 0.4em;
     }
 
     .social-media-icon > svg {
-        width: 2.5em;
+        width: 2em;
         height: auto;
     } 
 }
