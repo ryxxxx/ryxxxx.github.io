@@ -35,7 +35,7 @@ body {
 }
 
 #hamburger-icon > svg {
-    height: 10vh;
+    height: 7vh;
     width: auto;
     margin:auto;
     display: block;
@@ -47,7 +47,7 @@ body {
     text-decoration: none;
     margin-left: 0.5em;
     margin-right: 0.5em;
-    font-size: 1.4em;
+    font-size: 1.6em;
 }
 
 #menu-toggle
@@ -63,12 +63,13 @@ body {
         padding: 0;
         margin:0;
         z-index: -1;
-        height: 10vh;
+        height: 8vh;
         box-sizing: border-box;
     }
 
     #hamburger-icon {
         display:inline;
+        margin-top: 0;
     }
 
     .menu-item {
@@ -82,27 +83,25 @@ body {
 
     #menu-toggle:checked ~ #navigation > span:nth-child(1)
     {
-        margin-top: 10vh;
+        margin-top: 8vh;
     }
     #menu-toggle:checked ~ #navigation > span
     {
         margin: 0;
-        height: 22.5vh;
+        height: 23vh;
         width: 100%;
         display: block;
         padding: 0;
         text-align: center;
-        line-height: 22.5vh;
-        box-shadow: 0px 0px 1px 0px rgba(247,205,70,1) inset;
+        line-height: 23vh;
+        box-shadow: 0px -8px 8px 0px rgba(0,0,0,0.65) inset;
 
     }
     #menu-toggle:checked ~ #navigation > span > .menu-item
     {
         display: inline-block;
         margin: auto;
-        font-size: 5em;
-        vertical-align: middle;
-        line-height: normal;
+        font-size: 3em;
         text-shadow: 0px 0px 2px black;
     }
 
@@ -178,11 +177,11 @@ body {
     border: 2.5px solid #f7cd46;
     border-radius: 50%;
     width: fit-content;
-    padding: 6px;
+    padding: 0.5em;
 }
 
 .social-media-icon > svg {
-    width: 1.2em;
+    width: 1.5em;
     height: auto;
 }
 
@@ -195,13 +194,6 @@ body {
         justify-self: center;
     }
 
-    #name > h1 {
-        font-size: 5.5em;
-    }
-
-    #name > h2 {
-        font-size: 3em;
-    }
 
     #social-media-container {
         margin: auto;
@@ -209,13 +201,13 @@ body {
     }
 
     .social-media-icon {
-        padding: 1em;
+        padding: 0.8em;
         margin-left: 0.5em;
         margin-right: 0.5em;
     }
 
     .social-media-icon > svg {
-        width: 3.5em;
+        width: 2.5em;
         height: auto;
     } 
 }
