@@ -29,16 +29,12 @@ body {
     border-image-slice: 0% 0% 100% 0%;
 }
 
-#hamburger-icon {
-    display:none;
+#navbar {
+    display: none;
 }
 
-#hamburger-icon > svg {
-    height: 7dvh;
-    width: auto;
-    margin:auto;
-    display: block;
-    transition: 150ms;
+#hamburger-icon {
+    display:none;
 }
 
 .menu-item {
@@ -57,18 +53,30 @@ body {
 
 @media screen and (max-device-width: 615px) {
     #navigation {
+        position: static;
         width: 100%;
-        background-color: #f7cd46;
         padding: 0;
         margin:0;
-        z-index: -1;
-        height: 8dvh;
-        box-sizing: border-box;
+        height: 100dvh;
+        display: grid;
+        grid-column: auto;
+        border-bottom: none;
+        grid-template-rows: 8%;
     }
 
     #hamburger-icon {
-        display:inline;
-        margin-top: 0;
+        display:block;
+        width: fit-content;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+    
+    }
+    
+    #hamburger-icon > svg {
+        height: 7dvh;
+        width: auto;
+        transition: 150ms;
     }
 
     .menu-item {
@@ -80,22 +88,35 @@ body {
         transform: rotate(90deg);
     }
 
-    #menu-toggle:checked ~ #navigation > span:nth-child(1)
+    #navbar
     {
-        margin-top: 8dvh;
+        display: block;
+        box-shadow: none;
+        background-color: #f7cd46;
+        border-bottom: 8px solid black;
+        border-image: linear-gradient(to top, #5ac3b0 49%, #5ac3b0 50%, #de5935 51%, #de5935 100%);
+        border-image-slice: 0% 0% 100% 0%;
+        box-sizing: border-box;
     }
+
+    #menu-toggle:checked ~ #navigation
+    {
+        grid-template-rows: 8% 23% 23% 23% 23%;
+    }
+
     #menu-toggle:checked ~ #navigation > span
     {
         margin: 0;
-        height: 23dvh;
         width: 100%;
-        display: block;
         padding: 0;
-        text-align: center;
-        line-height: 23dvh;
-        box-shadow: 0px -6px 12px 0px rgba(0,0,0,0.65) inset;
-
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+        box-shadow: 0px -6px 10px 0px rgba(0,0,0,0.65) inset;
     }
+
     #menu-toggle:checked ~ #navigation > span > .menu-item
     {
         display: inline-block;
