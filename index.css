@@ -17,7 +17,6 @@ body {
 }
 
 #navigation {
-    height: calc(10vh+2em);
     position: absolute;
     right: 0;
     top: 0;
@@ -35,7 +34,7 @@ body {
 }
 
 #hamburger-icon > svg {
-    height: 7vh;
+    height: 7dvh;
     width: auto;
     margin:auto;
     display: block;
@@ -63,7 +62,7 @@ body {
         padding: 0;
         margin:0;
         z-index: -1;
-        height: 8vh;
+        height: 8dvh;
         box-sizing: border-box;
     }
 
@@ -83,17 +82,17 @@ body {
 
     #menu-toggle:checked ~ #navigation > span:nth-child(1)
     {
-        margin-top: 8vh;
+        margin-top: 8dvh;
     }
     #menu-toggle:checked ~ #navigation > span
     {
         margin: 0;
-        height: 23vh;
+        height: 23dvh;
         width: 100%;
         display: block;
         padding: 0;
         text-align: center;
-        line-height: 23vh;
+        line-height: 23dvh;
         box-shadow: 0px -6px 12px 0px rgba(0,0,0,0.65) inset;
 
     }
@@ -111,14 +110,14 @@ body {
 
     #menu-toggle:checked ~ #mobile-menu-background
     {
-        height: 100vh;
+        height: 100dvh;
         z-index: -1;
         width: 100vw;
         position: absolute;
         top: 0;
         left: 0;
         background: rgb(0,0,0);
-        background: linear-gradient(180deg, rgba(19, 52, 46, 0.6) 0%, rgba(59, 20, 10, 0.6) 100%);
+        background: linear-gradient(180deg, rgba(19, 52, 46, 0.5) 0%, rgba(59, 20, 10, 0.5) 100%);
     }
 }
   
@@ -277,8 +276,8 @@ body {
   
 @keyframes imageAnimation { 
     0% { opacity: 0; animation-timing-function: ease-in; visibility: visible; }
-    2% { opacity: 0.5; animation-timing-function: ease-out; }
-    25% { opacity: 0.5; }
+    2% { opacity: 0.55; animation-timing-function: ease-out; }
+    25% { opacity: 0.55; }
     27% { opacity: 0; visibility: hidden; }
     100% { opacity: 0; }
 }
