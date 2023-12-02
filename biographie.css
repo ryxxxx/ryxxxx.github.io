@@ -64,10 +64,13 @@ html,body { min-height: 100dvh; fit-content; position: relative;}
 }
 
 
-#home-button:hover > svg {
-    color: rgb(9,9,9);
+#home-button:hover {
     border-color: transparent;
     background-color: #f7cd46;
+}
+
+#home-button:hover > svg {
+    color:black;
 }
 
 #home-button {
@@ -90,15 +93,14 @@ html,body { min-height: 100dvh; fit-content; position: relative;}
 
 @media screen and (max-device-width: 615px) {
     #home-button {
-        display: none;
         border: none;
-        left:0;
-        top:0;
+        left:0.05dvh;
+        top:0.3dvh;
     }
 
     #home-button > svg {
         color: black;
-        height: 6dvh;
+        height: 5.6dvh;
         width: auto;
     }
 
