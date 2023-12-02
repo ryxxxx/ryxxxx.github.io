@@ -20,7 +20,7 @@ html,body { min-height: 100dvh; position: relative;}
     padding-bottom: 2em;
     color: black;
     font-size: 1.25em;
-    line-height: 1.75em;
+    line-height: 2em;
     font-family: 'Lato';
     text-align: justify;
     text-justify: distribute;
