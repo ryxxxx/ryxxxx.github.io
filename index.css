@@ -8,18 +8,22 @@
     src: url("assets/LibreBodoni-Regular.ttf");
 }
 
+@font-face {
+    font-family: Lato;
+    src: url("assets/Lato-Light.ttf");
+}
 
 body {
-    background-color: rgb(9,9,9);
+    background-color: rgb(0,0,0);
     margin:0;
     color:#f7cd46;
     font-family: 'LibreBodoni', sans-serif;
+    font-size: 16px;
 }
 
 #navigation {
-    position: absolute;
-    right: 0;
-    top: 0;
+    background: linear-gradient(to left, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 85%, rgba(0,0,0,0) 100%);
+    float: right;
     padding-top: 1.25em;
     padding-bottom: 0.75em;
     padding-left: 0.5em;
@@ -53,23 +57,24 @@ body {
 
 @media screen and (max-device-width: 615px) {
     #navigation {
-        position: static;
+        position: sticky;
         width: 100%;
         padding: 0;
         margin:0;
-        height: 100dvh;
+        height: 8dvh;
         display: grid;
         grid-column: auto;
         border-bottom: none;
-        grid-template-rows: 8%;
+        grid-template-rows: 100%;
     }
 
     #hamburger-icon {
         display:block;
         width: fit-content;
-        position: absolute;
+        position: fixed;
         left: 50%;
         transform: translate(-50%, 0);
+        z-index: 2;
     
     }
     
@@ -102,6 +107,7 @@ body {
     #menu-toggle:checked ~ #navigation
     {
         grid-template-rows: 8% 23% 23% 23% 23%;
+        height: 100dvh;
     }
 
     #menu-toggle:checked ~ #navigation > span
@@ -157,7 +163,7 @@ body {
     margin-bottom: 2em;
     padding-bottom: 1em;
     padding-left: 2em;
-    font-family: BodoniModa;
+    font-family: 'BodoniModa';
 }
 
 #name > h1 {
@@ -297,8 +303,8 @@ body {
   
 @keyframes imageAnimation { 
     0% { opacity: 0; animation-timing-function: ease-in; visibility: visible; }
-    2% { opacity: 0.55; animation-timing-function: ease-out; }
-    25% { opacity: 0.55; }
+    2% { opacity: 0.9; animation-timing-function: ease-out; }
+    25% { opacity: 0.9; }
     27% { opacity: 0; visibility: hidden; }
     100% { opacity: 0; }
 }

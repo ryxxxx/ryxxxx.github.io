@@ -1,0 +1,144 @@
+html,body { min-height: 100dvh; fit-content; position: relative;}
+
+#content-pane {
+    width: 60%;
+    margin: auto;
+    clear:right;
+    background-color: whitesmoke;
+    border-top: 8px solid;
+    border-bottom: 8px solid;
+    border-image: linear-gradient(to top, #5ac3b0 49%, #5ac3b0 50%, #de5935 51%, #de5935 100%);
+    border-image-slice: 100% 0% 100% 0%;
+    box-sizing: border-box;
+}
+
+#content-pane > article {
+    
+    padding: 1em;
+    padding-bottom: 2em;
+    color: black;
+    font-size: 1.3em;
+    line-height: 1.75em;
+    font-family: 'Lato';
+    text-align: justify;
+}
+
+#content-pane > article > span {
+    margin: 1em 0.5em 0 2em;
+    float: right;
+}
+
+#content-pane > article > span > div {
+    font-size: 0.9em;
+    text-align: center;
+    font-style: italic;
+}
+
+#content-pane > article > span > img {
+    width: 20em;
+    height: auto;
+}
+
+#content-pane > article > h1 {
+    text-decoration: #f7cd46 underline;
+    text-decoration-thickness: 5px;
+    margin: 0;
+    margin-bottom: 0.5em;
+    font-family: 'LibreBodoni', sans-serif;
+}
+
+#navigation {
+    margin-bottom: 2.5em;
+}
+
+#slideshow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+#slideshow > .bgi {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+#home-button:hover > svg {
+    color: rgb(9,9,9);
+    border-color: transparent;
+    background-color: #f7cd46;
+}
+
+#home-button {
+    display: flex;
+    justify-content: center; 
+    border: 4px solid #f7cd46;
+    border-radius: 33%;
+    width: fit-content;
+    padding: 0.05em;
+    position: fixed;
+    left:0.5em;
+    top: 0.5em;
+}
+
+#home-button > svg {
+    width: 2.5em;
+    height: auto;
+    color: #f7cd46;
+}
+
+@media screen and (max-device-width: 615px) {
+    #home-button {
+        display: none;
+        border: none;
+        left:0;
+        top:0;
+    }
+
+    #home-button > svg {
+        color: black;
+        height: 6dvh;
+        width: auto;
+    }
+
+    #slideshow  {
+        display: none;
+    }
+
+    #navigation {
+        margin-bottom: 0;
+        position: sticky;
+        top:0;
+    }
+    #content-pane {
+        width: 100dvw;
+        min-height: 100dvh;
+        border-top: none;
+        border-image-slice: 0% 0% 100% 0%;
+    }
+    #menu-toggle:checked ~ #content-pane {
+        display: none;
+    }
+
+    #content-pane > article > span > img {
+        width: 100%;
+        height: auto;
+    }
+
+    #content-pane > article > span {
+        clear: right;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+    }
+}
+
+@keyframes imageAnimation { 
+    0% { opacity: 0; animation-timing-function: ease-in; visibility: visible; }
+    2% { opacity: 0.5; animation-timing-function: ease-out; }
+    25% { opacity: 0.5; }
+    27% { opacity: 0; visibility: hidden; }
+    100% { opacity: 0; }
+}
