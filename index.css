@@ -79,7 +79,7 @@ body {
     }
     
     #hamburger-icon > svg {
-        height: 7dvh;
+        height: 7vh;
         width: auto;
         transition: 150ms;
     }
