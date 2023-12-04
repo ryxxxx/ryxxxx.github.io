@@ -7,7 +7,6 @@ document
 
     const formData = new FormData(this);
     const data = Object.fromEntries(formData);
-    print("aaasdasd");
     fetch(url, {
       method: 'POST',
       headers: {

@@ -29,6 +29,7 @@ html,body { min-height: 100dvh; position: relative;}
     text-align: justify;
     text-justify: distribute;
     float: left;
+    margin-bottom: 1.5em;
 }
 
 .imgContainer {
