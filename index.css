@@ -19,6 +19,7 @@ body {
     color:#f7cd46;
     font-family: 'LibreBodoni', sans-serif;
     font-size: 16px;
+    font-display: swap;
 }
 
 #navigation {

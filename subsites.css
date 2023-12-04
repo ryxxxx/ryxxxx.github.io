@@ -14,35 +14,45 @@ html,body { min-height: 100dvh; position: relative;}
     z-index: 0;
 }
 
-#content-pane > article {
-    
+#content-pane::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.articleText {
+    display: inline;
     padding: 1em;
     padding-bottom: 2em;
     color: black;
-    font-size: 1.25em;
+    font-size: 1.2em;
     line-height: 2em;
     font-family: 'Lato';
     text-align: justify;
     text-justify: distribute;
+    float: left;
 }
 
-#content-pane > article > span {
-    margin: 1em 0.5em 0 2em;
+.imgContainer {
+    padding: 0em 1.5em 0em 2.5em;
     float: right;
 }
 
-#content-pane > article > span > div {
+.imgContainer > .imgDescription {
     font-size: 0.9em;
     text-align: center;
     font-style: italic;
+    color: black;
+    font-family: 'Lato';
 }
 
-#content-pane > article > span > img {
+.imgContainer > img {
     width: 20em;
+    max-width: 100%;
     height: auto;
 }
 
-#content-pane > article > h1 {
+#content-pane > article > div > h1 {
     font-size: 1.75em;
     text-decoration: #f7cd46 underline;
     text-decoration-thickness: 5px;
@@ -127,17 +137,18 @@ html,body { min-height: 100dvh; position: relative;}
         display: none;
     }
 
-    #content-pane > article > span > img {
+    .imgContainer > img {
         width: 100%;
         height: auto;
     }
 
-    #content-pane > article > span {
+    .imgContainer {
         clear: right;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 1.5em;
+        margin-top: 0em;
         margin-bottom: 1.5em;
+        padding: 0;
     }
 }
 
