@@ -7,7 +7,7 @@
 <title>Noah Schaul, Tenor</title>
 <link rel="stylesheet" href="index.css">
 <link rel="stylesheet" href="subsites.css">
-
+<script src="kontakt.js"></script>
 <link rel="preload" href="/assets/BodoniModa_48pt-Regular.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="preload" href="/assets/Lato-Light.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="preload" href="/assets/LibreBodoni-Regular.ttf" as="font" type="font/ttf" crossorigin>
@@ -34,8 +34,24 @@
         <span><a class="menu-item" href="./kontakt.html">Kontakt</a></span>
     </div>
     <div id="content-pane">
-        <article><h1>Kontakt</h1>
-            noah@email.com            
+        <article>
+            <h1>Kontakt</h1>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required />
+              
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+              
+                <button type="submit">Submit</button>
+            </form>
+              
+            Impressum:
+            Noah Schaul
+
         </article>
     </div>
 </body>
