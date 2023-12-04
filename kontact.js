@@ -1,4 +1,4 @@
-const url="https://script.google.com/macros/s/AKfycbz2uC3kF9ZUaxTuJTysZrsDbWId-hC66jWI6d44kBEhSULQsTcpwFKO7ahdXp3--LvLSg/exec";
+const url="https://script.google.com/macros/s/AKfycbzL7JWkf2pMwhNQbUcLWCZfJbqa8brphGlqYSZaR6wv7gKf2PV61-wxCv9MQ1qz-kiqPA/exec";
 
 document
   .getElementById('contact-form')
@@ -7,7 +7,7 @@ document
 
     const formData = new FormData(this);
     const data = Object.fromEntries(formData);
-
+    print("aaasdasd");
     fetch(url, {
       method: 'POST',
       headers: {
