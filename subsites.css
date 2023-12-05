@@ -27,7 +27,7 @@ html,body { min-height: 100dvh; position: relative;}
     line-height: 2em;
     font-family: 'Lato';
     text-align: justify;
-    text-justify: distribute;
+    text-justify:distribute-all-lines;
     float: left;
     margin-bottom: 1.5em;
 }
@@ -60,7 +60,8 @@ article {
 }
 
 article  h1 {
-    font-size: 1.75em;
+    text-align: center;
+    font-size: 2.5em;
     text-decoration: #f7cd46 underline;
     text-decoration-thickness: 5px;
     margin: 0;
@@ -68,6 +69,73 @@ article  h1 {
     font-family: 'LibreBodoni', sans-serif;
 }
 
+#impressum {
+    text-align: center;
+    font-size: 0.8em;
+    margin-top: 4em;
+}
+
+#impressum a {
+    color: black;
+}
+
+#impressum > h1 {
+    text-align: center;
+    font-size: 1.2em;
+    text-decoration: black underline;
+    text-decoration-thickness: 1px;
+    margin: 0;
+}
+
+#contact-form  {
+    max-width:100%;
+    width: 50em;
+    margin:auto;
+}
+
+#contact-form > div:nth-child(1), #contact-form > div:nth-child(2) {
+    width: 100%;
+    max-width: 20em;
+    margin: auto;
+    margin-top: 1em;
+}
+
+#contact-form > div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+label {
+    font-size: 1.2em;
+    margin-bottom: 0.3em;
+}
+
+button {
+    display: block;
+    margin:auto;
+    margin-top: 1em;
+    color:black;
+    font-size: 1.2em;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+input {
+    height:2em;
+}
+
+textarea {
+    resize:none;
+    height: 10em;
+}
+
+input, textarea {
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 1em;
+}
 
 #timetable {
     display: grid;
@@ -127,6 +195,7 @@ article  h1 {
 }
 
 @media screen and (max-device-width: 615px) {
+
     #home-button {
         border: none;
         left:0.05vh;
@@ -150,7 +219,7 @@ article  h1 {
     }
     #content-pane {
         width: 100dvw;
-        min-height: 100dvh;
+        min-height: 92dvh;
         border-top: none;
         border-image-slice: 0% 0% 100% 0%;
     }

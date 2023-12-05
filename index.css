@@ -158,7 +158,7 @@ body {
     height:fit-content;
 }
 
-#name {
+#name-container {
     padding-left: 1em;
     padding-right: 2em;
     margin-bottom: 2em;
@@ -167,13 +167,13 @@ body {
     font-family: 'BodoniModa';
 }
 
-#name > h1 {
+#name-container > h1 {
     font-size: 4.5em;
     margin:0;
     text-shadow: 0px 0px 2px #de5935;
 }
 
-#name > h2 {
+#name-container > h2 {
     font-size: 2em;
     margin:0;
 }
@@ -219,15 +219,15 @@ body {
         flex-direction: column;
     }
     
-    #name {
+    #name-container {
         justify-self: center;
     }
 
-    #name > h1 {
+    #name-container > h1 {
         font-size: 3.3em;
     }
     
-    #name > h2 {
+    #name-container > h2 {
         font-size: 1.5em;
     }
 

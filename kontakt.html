@@ -34,23 +34,25 @@
     </div>
     <div id="content-pane">
         <article>
-            <h1>Kontakt</h1>
+            <h1 id="contact-header">Kontakt</h1>
             <form id="contact-form">
+                <div>
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required />
-              
+                </div>
+                <div>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required />
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" cols="50" required></textarea>
-              
-                <button type="submit">Submit</button>
+                </div>
+                <div>
+                <label for="message">Nachricht:</label>
+                <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Senden</button>
             </form>
-              
-            Impressum:
-            Noah Schaul
-
+            <div id="impressum">  
+            <h1><a href="./impressum.html">Impressum</a></h1>
+            </div>
         </article>
     </div>
     <script src="kontakt.js"></script>
