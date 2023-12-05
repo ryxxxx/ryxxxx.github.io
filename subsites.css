@@ -139,15 +139,27 @@ input, textarea {
 
 #timetable {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 2fr 3fr 1fr;
     grid-template-rows: auto;
-    
+    font-size: 1.1em;
+    margin-top: 1.5em;
 }
 
-#timetable > span { height: fit-content;}
+#timetable > span {
+     height: fit-content;
+     padding: 0.5em;
+     border-top: 1px solid black;
+     height: em;
+     overflow:hidden;
+}
 
 #timetable > span:nth-child(4n-1), #timetable > span:nth-child(4n) {
     text-align: right;
+}
+
+#timetable > span:nth-child(4n-2) {
+    text-align: justify;
+    text-align-last:justify;
 }
 
 #navigation {
@@ -193,6 +205,21 @@ input, textarea {
     height: auto;
     color: #f7cd46;
 }
+
+#youtube-embeds {
+    display: flex;
+    flex-flow: row-reverse wrap-reverse;
+    justify-content: center;
+    margin-top: -1em;
+}
+
+#youtube-embeds > div {
+  padding: 1em;
+  margin: 1em;
+  max-width: calc(50% - 2rem);
+  min-width: calc(50% - 2rem);
+}
+
 
 @media screen and (max-device-width: 615px) {
 
