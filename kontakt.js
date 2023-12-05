@@ -1,4 +1,4 @@
-const url="https://script.google.com/macros/s/AKfycbz-Q6t17Ec3s_WueMNHh7gsvc_-GVI-Tz0sD_GGKZhJo6IaSXWG45JXGaiklwjN6AaCHg/exec";
+const url="https://script.google.com/macros/s/AKfycbxiSMXcWGUiFRyAT24plLkpQ99fQSNxQR59EBa6qS_U5Sby45sbhjtTnKlvH91gA1OM/exec";
 
 document
   .getElementById('contact-form')
