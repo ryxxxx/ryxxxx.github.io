@@ -2,9 +2,6 @@ CACHE MANIFEST
 index.html
 index.css
 subsites.css
-assets/BodoniModa_48pt-Regular.ttf
-assets/Lato-Light.ttf
-assets/LibreBodoni-Regular.ttf
 assets/placeholder_biographie.jpeg
 assets/placeholder1.jpg
 assets/placeholder2.jpg

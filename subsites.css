@@ -62,7 +62,6 @@ article {
 article  h1 {
     text-align: center;
     font-size: 2.5em;
-    text-decoration: #f7cd46 underline;
     text-decoration-thickness: 5px;
     margin: 0;
     margin-bottom: 0.5em;
@@ -139,28 +138,35 @@ input, textarea {
 
 #timetable {
     display: grid;
-    grid-template-columns: 2fr 2fr 3fr 1fr;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
     grid-template-rows: auto;
-    font-size: 1.1em;
     margin-top: 1.5em;
 }
 
 #timetable > span {
-     height: fit-content;
-     padding: 0.5em;
      border-top: 1px solid black;
-     height: em;
-     overflow:hidden;
+     padding-top:1em;
+     padding-bottom: 1em;
+     padding-right: 1em;
+     height: 3em;
+     font-size: 1.2em;
+     line-height: 1.5em;
 }
 
-#timetable > span:nth-child(4n-1), #timetable > span:nth-child(4n) {
+#timetable > span:nth-child(4n) {
     text-align: right;
 }
 
-#timetable > span:nth-child(4n-2) {
+#timetable > span:nth-child(4n-1) {
     text-align: justify;
-    text-align-last:justify;
+    text-align-last:center;
+    overflow-y: auto;
 }
+
+#timetable > span:nth-child(4n-2) {
+    text-align: center;
+}
+
 
 #navigation {
     margin-bottom: 2.5em;
@@ -222,6 +228,44 @@ input, textarea {
 
 
 @media screen and (max-device-width: 615px) {
+
+    #timetable {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        margin-top: 1.5em;
+    }
+
+    #timetable > span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 4.5em;
+        line-height: 1.5em;
+        padding: 0em;
+   }
+
+   #timetable > span:nth-child(4n-1) {
+    text-align: center;
+    text-align-last:center;
+   }
+
+   #timetable > span:nth-child(4n-2),#timetable > span:nth-child(4n-1), #timetable > span:nth-child(4n){
+    border-top: none;
+    }
+
+    #youtube-embeds {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        margin-top: -1em;
+        width: 100%;
+    }
+    
+    #youtube-embeds > div {
+        max-width: none;
+        min-width: none;
+    }    
 
     #home-button {
         border: none;
