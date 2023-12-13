@@ -1,5 +1,7 @@
 html,body { min-height: 100dvh; position: relative;}
 
+#calendar-body {padding-bottom: 5em;}
+
 #content-pane {
     width: 60%;
     margin: auto;
@@ -11,7 +13,6 @@ html,body { min-height: 100dvh; position: relative;}
     border-image-slice: 100% 0% 100% 0%;
     box-sizing: border-box;
     box-shadow: 0px 0px 4px 4px rgba(0,0,0,0.6) inset;
-    z-index: 0;
 }
 
 #content-pane::after {
@@ -105,7 +106,7 @@ article  h1 {
     margin-top: 1em;
 }
 
-label {
+#hamburger-icon {
     font-size: 1.2em;
     margin-bottom: 0.3em;
 }
@@ -160,8 +161,59 @@ input, textarea {
 #timetable > span:nth-child(4n-1) {
     text-align: justify;
     text-align-last:center;
-    overflow-y: auto;
 }
+
+#timetable label {
+    text-align: justify;
+    text-align-last:center;
+}
+
+#timetable label:hover {
+    cursor: pointer;
+}
+
+.date-toggle {
+    display: none;    
+}
+
+.date-list {
+    display: none;
+}
+
+.date-toggle:checked ~ .date-list {
+    display: block;
+    background-color: black;
+    color: #f7cd46;
+
+    text-align: justify;
+    text-align-last:center;
+    
+    max-height: 4em;
+    overflow-y: scroll;
+
+    width: fit-content;
+    padding: 0 0.5em;
+    margin: 0 auto;
+
+
+    position:relative;
+}
+
+.date-list {
+    /* Foreground, Background */
+    scrollbar-color: #999 #333;
+    scrollbar-width: thin;
+  }
+  .date-list::-webkit-scrollbar {
+    width: 10px; /* Mostly for vertical scrollbars */
+    height: 10px; /* Mostly for horizontal scrollbars */
+  }
+  .date-list::-webkit-scrollbar-thumb { /* Foreground */
+    background: #999;
+  }
+  .date-list::-webkit-scrollbar-track { /* Background */
+    background: #333;
+  }  
 
 #timetable > span:nth-child(4n-2) {
     text-align: center;
@@ -201,7 +253,7 @@ input, textarea {
     border-radius: 33%;
     width: fit-content;
     padding: 0.05em;
-    position: fixed;
+    position: absolute;
     left:0.5em;
     top: 0.5em;
 }
@@ -224,10 +276,61 @@ input, textarea {
   margin: 1em;
   max-width: calc(50% - 2rem);
   min-width: calc(50% - 2rem);
+
+}
+
+
+#youtube-embeds div, iframe {
+    z-index: 0;
+}
+
+
+
+@media screen and (max-device-width: 1000px) {
+    #timetable > span:nth-child(4n-1) {
+        display: block;
+    }
+    #timetable {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        margin-top: 1.5em;
+    }
+
+    #timetable > span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 4.5em;
+        line-height: 1.5em;
+        padding: 0em;
+   }
+
+   #timetable > span:nth-child(4n-1), #timetable > span:nth-child(4n){
+        border-top: none;
+    }
+
+    #timetable > span:nth-child(4n-1) {
+     text-align: center;
+     text-align-last:center;
+    }
+ 
 }
 
 
 @media screen and (max-device-width: 615px) {
+
+    #timetable > span:nth-child(4n-1) {
+        display: block;
+    }
+
+    #home-button {
+        position: fixed;
+    }
+
+    #calendar-body {
+        padding: 0;
+    }
 
     #timetable {
         display: grid;
@@ -284,10 +387,12 @@ input, textarea {
     }
 
     #navigation {
+        z-index: 1;
         margin-bottom: 0;
         position: sticky;
         top:0;
     }
+
     #content-pane {
         width: 100dvw;
         min-height: 92dvh;

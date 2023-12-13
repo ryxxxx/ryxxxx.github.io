@@ -13,7 +13,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 </head>
-<body>
+<body id="calendar-body">
     <div id="slideshow"> <span class="bgi"></span> <span class="bgi"></span> <span class="bgi"></span><span class="bgi"></span></div>
     <input id="menu-toggle" type="checkbox" />
     <label id='hamburger-icon' for="menu-toggle">
@@ -38,12 +38,12 @@
         <article>
             <h1>Kalender</h1>
             <div id="timetable">
-            <span>St. Nikolai (Fehmarn)</span>  <span>Weihnachtsoratorium Camille Saint-Saens</span><span>16.12.23</span>                                                                                                               <span><a href="https://www.fehmarn.de/event/weihnachtskonzert-der-kantorei-st-nikolai">Tickets/Info</a></span>           
-            <span>Theater Lübeck</span>         <span>Sweeney Todd - Tobias Ragg</span>	            <span>20.12.23, 13.01.24, 28.01.24, 15.02.24, 25.02.24, 16.03.24, 05.04.24, 21.04.24, 10.05.24, 07.06.24, 14.06.24, 21.06.24</span>	<span><a href="https://www.theaterluebeck.de/spielplan/index.html">Tickets/Info</a></span>
-            <span>Theater Lübeck</span>         <span>Eugen Onegin - Lenski</span>	                <span>22.12.23, 11.01.24, 19.01.24</span>	                                                                                        <span><a href="https://www.theaterluebeck.de/spielplan/index.html">Tickets/Info</a></span>
-            <span>Theater Lübeck</span>         <span>Elektra - Junger Diener</span>	            <span>15.01.24, 27.01.24, 03.02.24, 18.02.24, 22.03.24, 28.03.24, 07.04.24, 12.04.24</span>                                        	<span><a href="https://www.theaterluebeck.de/spielplan/index.html">Tickets/Info</a></span>
-            <span>Theater Lübeck</span>         <span>Fledermaus - Alfred</span>	                <span>31.12.23, 22.02.24, 03.03.24, 23.03.24</span>	                                                                                <span><a href="https://www.theaterluebeck.de/spielplan/index.html">Tickets/Info</a></span>
-            <span>Theater Lübeck</span>         <span>Nozze di Figaro - Basilio/Curzio</span>	    <span>24.03.24, 01.04.24, 13.04.24, 12.05.24, 31.05.24</span>	                                                                    <span><a href="https://www.theaterluebeck.de/spielplan/index.html">Tickets/Info</a></span>
+            <span>St. Nikolai (Fehmarn)</span>  <span>Weihnachtsoratorium Camille Saint-Saens</span><span><label for="date-toggle1">Datumsliste ⮟</label><input id="date-toggle1" class="date-toggle" type="checkbox"><div class="date-list">16.12.23</div></span>                                                                                                               <span><a href="https://www.fehmarn.de/event/weihnachtskonzert-der-kantorei-st-nikolai">Tickets/Info</a></span>           
+            <span>Theater Lübeck</span>         <span>Sweeney Todd - Tobias Ragg</span>	            <span><label for="date-toggle2">Datumsliste ⮟</label><input id="date-toggle2" class="date-toggle" type="checkbox"><div class="date-list">20.12.23<br/>13.01.24<br/>28.01.24<br/>15.02.24<br/>25.02.24<br/>16.03.24<br/>05.04.24<br/>21.04.24<br/>10.05.24<br/>07.06.24<br/>14.06.24<br/>21.06.24</div></span>	<span><a href="https://www.theaterluebeck.de/spielplan/index.html">Tickets/Info</a></span>
+            <span>Theater Lübeck</span>         <span>Eugen Onegin - Lenski</span>	                <span><label for="date-toggle3">Datumsliste ⮟</label><input id="date-toggle3" class="date-toggle" type="checkbox"><div class="date-list">22.12.23<br/>11.01.24<br/>19.01.24</div></span>	                                                                                        <span><a href="https://www.theaterluebeck.de/spielplan/index.html">Tickets/Info</a></span>
+            <span>Theater Lübeck</span>         <span>Elektra - Junger Diener</span>	            <span><label for="date-toggle4">Datumsliste ⮟</label><input id="date-toggle4" class="date-toggle" type="checkbox"><div class="date-list">15.01.24<br/>27.01.24<br/>03.02.24<br/>18.02.24<br/>22.03.24<br/>28.03.24<br/>07.04.24<br/>12.04.24</div></span>                                        	<span><a href="https://www.theaterluebeck.de/spielplan/index.html">Tickets/Info</a></span>
+            <span>Theater Lübeck</span>         <span>Fledermaus - Alfred</span>	                <span><label for="date-toggle5">Datumsliste ⮟</label><input id="date-toggle5" class="date-toggle" type="checkbox"><div class="date-list">31.12.23<br/>22.02.24<br/>03.03.24<br/>23.03.24</div></span>	                                                                                <span><a href="https://www.theaterluebeck.de/spielplan/index.html">Tickets/Info</a></span>
+            <span>Theater Lübeck</span>         <span>Nozze di Figaro - Basilio/Curzio</span>	    <span><label for="date-toggle6">Datumsliste ⮟</label><input id="date-toggle6" class="date-toggle" type="checkbox"><div class="date-list">24.03.24<br/>01.04.24<br/>13.04.24<br/>12.05.24<br/>31.05.24</div></span>	                                                                    <span><a href="https://www.theaterluebeck.de/spielplan/index.html">Tickets/Info</a></span>
         </div>
         </article>
     </div>
