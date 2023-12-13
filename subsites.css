@@ -287,10 +287,9 @@ input, textarea {
 }
 
 
-#youtube-embeds div, iframe {
+#youtube-embeds > div {
     z-index: 0;
 }
-
 
 
 @media screen and (max-device-width: 1000px) {
