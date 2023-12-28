@@ -266,7 +266,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    animation: imageAnimation 28s infinite 0s;
+    animation: imageAnimation 49s infinite 0s;
     z-index: -1;
     background-position: center;
     background-size: cover;
@@ -283,29 +283,50 @@ body {
 
 #slideshow > .bgi:nth-child(2)
 {
-    background-image: url(assets/placeholder2.jpg);
+    background-image: url(assets/dschungelbuch1.jpg);
     animation-delay: 7s;
     visibility: hidden;
 }
 
 #slideshow > .bgi:nth-child(3)
 {
-    background-image: url(assets/placeholder3.jpg);
+    background-image: url(assets/fledermaus3.jpg);
     animation-delay: 14s;
     visibility: hidden;
 }
 
 #slideshow > .bgi:nth-child(4)
 {
-    background-image: url(assets/placeholder4.jpg);
+    background-image: url(assets/sweeney5.jpg);
     animation-delay: 21s;
+    visibility: hidden;
+}
+
+#slideshow > .bgi:nth-child(5)
+{
+    background-image: url(assets/stummeserenade2.jpg);
+    animation-delay: 28s;
+    visibility: hidden;
+}
+
+#slideshow > .bgi:nth-child(6)
+{
+    background-image: url(assets/fledermaus4.jpg);
+    animation-delay: 35s;
+    visibility: hidden;
+}
+
+#slideshow > .bgi:nth-child(7)
+{
+    background-image: url(assets/sweeney4.jpg);
+    animation-delay: 42s;
     visibility: hidden;
 }
   
 @keyframes imageAnimation { 
     0% { opacity: 0; animation-timing-function: ease-in; visibility: visible; }
-    2% { opacity: 0.9; animation-timing-function: ease-out; }
-    25% { opacity: 0.9; }
-    27% { opacity: 0; visibility: hidden; }
+    1% { opacity: 0.9; animation-timing-function: ease-out; }
+    13.5% { opacity: 0.9; }
+    14.5% { opacity: 0; visibility: hidden; }
     100% { opacity: 0; }
 }
