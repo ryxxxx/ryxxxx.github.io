@@ -421,6 +421,7 @@ input, textarea {
     }
 
     .imgContainer {
+        shape-outside: unset;
         clear: right;
         margin-left: auto;
         margin-right: auto;
