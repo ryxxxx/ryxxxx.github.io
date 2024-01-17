@@ -4,6 +4,9 @@ document
   .getElementById('contact-form')
   .addEventListener('submit', function (event) {
     event.preventDefault();
+    var button = document.getElementById('submitbutton');
+    button.setAttribute("disabled","true");
+    button.innerHTML="Sendet...";
 
     const formData = new FormData(this);
     const data = Object.fromEntries(formData);
@@ -16,7 +19,8 @@ document
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log('Successful', data);
+        button.innerHTML="Senden";
+        window.alert("Nachricht erfolgreich gesendet!");
         this.reset();
       })
       .catch((err) => console.log('err', err));

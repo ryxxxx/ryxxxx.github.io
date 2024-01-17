@@ -14,9 +14,9 @@ im.run({
 
             languages: {
                 en: {
-                    notice: 'This content is hosted by a third party. By showing the external content you accept the <a rel="noreferrer noopener" href="https://www.youtube.com/t/terms" target="_blank">terms and conditions</a> of youtube.com.',
-                    loadBtn: 'Load video',
-                    loadAllBtn: "Don't ask again"
+                    notice: 'Diese Video-Inhalte werden auf Youtube gehostet. Durch das Ansehen akzeptieren Sie die <a rel="noreferrer noopener" href="https://www.youtube.com/t/terms" target="_blank">Bedingungen</a> von youtube.com.',
+                    loadBtn: 'Video laden',
+                    loadAllBtn: "Immer laden"
                 }
             }
         }
