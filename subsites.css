@@ -56,18 +56,21 @@ article {
     padding-bottom: 2em;
 }
 
-h1 > a {
+h2 > a {
     font-family: 'MuktaLight';
 }
 
 article  h1 {
     color:black;
-    text-align: center;
+    text-align: left;
     font-size: 2.5em;
     text-decoration-thickness: 5px;
     margin: 0;
     margin-bottom: 0.5em;
-    font-family: 'LibreBodoni';
+    font-family: 'BodoniModa';
+    padding-left: 0.25em;
+    border-left: 4px solid #f7cd46;
+    
 }
 
 #impressum {
@@ -273,7 +276,7 @@ input, textarea {
 
 #youtube-embeds {
     display: flex;
-    flex-flow: row-reverse wrap-reverse;
+    flex-flow: row-reverse wrap;
     justify-content: center;
 }
 
@@ -282,12 +285,7 @@ input, textarea {
   margin: 1em;
   max-width: calc(50% - 2rem);
   min-width: calc(50% - 2rem);
-
-}
-
-
-#youtube-embeds > div {
-    z-index: 0;
+  z-index: 0;
 }
 
 #calendar-body {
@@ -434,7 +432,7 @@ input, textarea {
 @keyframes imageAnimation { 
     0% { opacity: 0; animation-timing-function: ease-in; visibility: visible; }
     1% { opacity: 0.5; animation-timing-function: ease-out; }
-    13.5% { opacity: 0.5; }
-    14.5% { opacity: 0; visibility: hidden; }
+    11% { opacity: 0.5; }
+    12% { opacity: 0; visibility: hidden; }
     100% { opacity: 0; }
 }
